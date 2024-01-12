@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 50px 100px;
+  font-family: "Satoshi", sans-serif;
+}
+.head {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.head h1 {
+  font-family: "Space Grotesk", sans-serif;
+}
+nav {
+  display: flex;
+  width: max-content;
+  gap: 1em;
+}
+nav a {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  color: #ffffff52;
+}
+nav a.selected {
+  color: #fff;
+}
+.flexContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+
+  justify-content: left;
+}
+.flexContainer > * {
+  flex-basis: 300px;
+  flex-grow: 1;
+  margin-top: 50px;
+}
