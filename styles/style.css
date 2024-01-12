@@ -6,7 +6,7 @@
 body {
   background-color: #0d0d0d;
   color: #fff;
-  padding: 50px 100px;
+  padding: 50px 10%;
   font-family: "Satoshi", sans-serif;
 }
 .head {
@@ -35,14 +35,25 @@ nav a.selected {
   color: #fff;
 }
 .flexContainer {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-
-  justify-content: left;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(350px, 1fr));
+  gap: 1rem;
 }
 .flexContainer > * {
-  flex-basis: 300px;
-  flex-grow: 1;
   margin-top: 50px;
+}
+
+.image-container img {
+  width: 100%;
+  min-width: 350px;
+  max-width: 500px;
+}
+@media screen and (width <= 720px) {
+  .flexContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .image-container {
+    grid-row: 1 / span 1;
+  }
 }
