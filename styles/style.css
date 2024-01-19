@@ -31,22 +31,111 @@ nav a {
   text-decoration: none;
   color: #ffffff52;
 }
-nav a.selected {
+nav a.selected,
+nav a:hover {
+  transition: color 500ms ease;
   color: #fff;
 }
 .flexContainer {
   display: grid;
-  grid-template-columns: repeat(2, minmax(350px, 1fr));
+  grid-template-columns: 60% 30%;
   gap: 1rem;
 }
 .flexContainer > * {
   margin-top: 50px;
+  width: 90%;
+  max-width: 500px;
 }
-
+.image-container .img-bg {
+  background-color: #6350da;
+  width: fit-content;
+}
 .image-container img {
+  /* padding: 50px; */
+  right: 20px;
+  top: 20px;
+  position: relative;
   width: 100%;
   min-width: 350px;
   max-width: 500px;
+}
+.content {
+  font-family: "Satoshi", sans-serif;
+  /* font-size: 52px;
+font-weight: 700; */
+
+  /* line-height: 70px;
+letter-spacing: -0.035em; */
+  text-align: left;
+}
+.content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  margin-top: 30px;
+}
+.content h2 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -0.035em;
+}
+.content .link-container {
+  margin-top: 30px;
+}
+
+.content .link-container a {
+  font-family: "Satoshi", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  margin-right: 10px;
+}
+a.contact-link {
+  background-color: #6350da;
+  border: 2px solid #6350da;
+  color: #fff;
+  padding: 10px;
+}
+a.project-link {
+  background-color: transparent;
+  border: 2px solid #6350da;
+  color: #fff;
+  padding: 10px;
+}
+.tech-used {
+  margin-top: 50px;
+}
+.tech-used h2 {
+  font-family: "Satoshi", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.tech-used ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #6350da;
+  box-shadow: 0 0 0 100vmax #6350da;
+  clip-path: inset(0 -100vmax);
+  list-style-type: none;
+}
+.tech-used ul * {
+  font-family: "Satoshi", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+  text-align: left;
 }
 @media screen and (width <= 720px) {
   .flexContainer {
