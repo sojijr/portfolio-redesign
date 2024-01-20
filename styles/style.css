@@ -121,6 +121,7 @@ a.project-link {
 }
 .tech-used ul {
   display: flex;
+  gap: 1rem;
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 20px;
