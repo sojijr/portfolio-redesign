@@ -51,7 +51,6 @@ nav a:hover {
   width: fit-content;
 }
 .image-container img {
-  /* padding: 50px; */
   right: 20px;
   top: 20px;
   position: relative;
@@ -61,11 +60,7 @@ nav a:hover {
 }
 .content {
   font-family: "Satoshi", sans-serif;
-  /* font-size: 52px;
-font-weight: 700; */
 
-  /* line-height: 70px;
-letter-spacing: -0.035em; */
   text-align: left;
 }
 .content p {
@@ -138,6 +133,62 @@ a.project-link {
   letter-spacing: -0.035em;
   text-align: left;
 }
+
+.menu-icon {
+  visibility: hidden;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 50px;
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  background: #fff;
+  border-radius: 10px;
+  height: 7px;
+  margin: 7px 0;
+  transition: 300ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.menu-icon > span:nth-of-type(1) {
+  width: 50%;
+}
+
+.menu-icon > span:nth-of-type(2) {
+  width: 100%;
+}
+
+.menu-icon > span:nth-of-type(3) {
+  width: 75%;
+}
+
+.menu-icon > input[type="checkbox"] {
+  display: none;
+}
+
+.menu-icon > input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+  transform-origin: bottom;
+  transform: rotatez(45deg) translate(8px, 0px);
+}
+
+.menu-icon > input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+  transform-origin: top;
+  transform: rotatez(-45deg);
+}
+
+.menu-icon > input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+  transform-origin: bottom;
+  width: 50%;
+  transform: translate(30px, -11px) rotatez(45deg);
+}
+.menu-icon > input[type="checkbox"]:checked ~ nav {
+  visibility: visible;
+}
+
 @media screen and (width <= 720px) {
   .flexContainer {
     display: grid;
@@ -145,5 +196,30 @@ a.project-link {
   }
   .image-container {
     grid-row: 1 / span 1;
+  }
+
+  .menu-icon {
+    visibility: visible;
+  }
+  nav,
+  nav a {
+    display: block;
+  }
+  nav {
+    visibility: hidden;
+    position: absolute;
+    top: 30px;
+    right: 70px;
+    z-index: 1000;
+    background-color: #0d0d0d;
+    padding: 10px 20px;
+  }
+  nav a {
+    font-size: 1.8em;
+    margin-top: 15px;
+    padding: 5px;
+  }
+  nav.nav-desktop {
+    visibility: hidden;
   }
 }

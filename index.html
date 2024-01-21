@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon" />
     <link
       href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap"
       rel="stylesheet"
@@ -15,12 +15,26 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/style.css" />
+
     <title>Soji's Portfolio</title>
   </head>
   <body>
+    <!-- <div onclick="toggleMenu('nav-bar')"></div> -->
+    <label class="menu-icon" for="check">
+      <input type="checkbox" id="check" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <nav id="nav-bar" class="nav active">
+        <a href="" class="selected">Home</a>
+        <a href="">About</a>
+        <a href="">Works</a>
+        <a href="">Contact</a>
+      </nav>
+    </label>
     <header class="head">
       <h1>SojiJr.</h1>
-      <nav>
+      <nav id="nav-bar" class="nav-desktop active">
         <a href="" class="selected">Home</a>
         <a href="">About</a>
         <a href="">Works</a>
