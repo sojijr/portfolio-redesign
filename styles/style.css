@@ -3,7 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+html,
 body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
   background-color: #0d0d0d;
   color: #fff;
   padding: 30px 10%;
@@ -249,14 +254,4 @@ a.project-link {
   .hidden {
     transition: none;
   }
-}
-/* stagger animation for the links */
-a:nth-child(2).hidden {
-  transition-delay: 800ms;
-}
-a:nth-child(3).hidden {
-  transition-delay: 600ms;
-}
-a:nth-child(4).hidden {
-  transition-delay: 400ms;
 }
