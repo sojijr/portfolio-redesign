@@ -17,10 +17,11 @@
     <link rel="stylesheet" href="styles/style.css" />
 
     <title>Soji's Portfolio</title>
+    <script defer src="./script.js"></script>
   </head>
   <body>
     <!-- <div onclick="toggleMenu('nav-bar')"></div> -->
-    <label class="menu-icon" for="check">
+    <label class="menu-icon hidden" for="check">
       <input type="checkbox" id="check" />
       <span></span>
       <span></span>
@@ -33,34 +34,34 @@
       </nav>
     </label>
     <header class="head">
-      <h1>SojiJr.</h1>
+      <h1 class="hidden">SojiJr.</h1>
       <nav id="nav-bar" class="nav-desktop active">
-        <a href="" class="selected">Home</a>
-        <a href="">About</a>
-        <a href="">Works</a>
-        <a href="">Contact</a>
+        <a href="" class="selected hidden">Home</a>
+        <a href="" class="hidden">About</a>
+        <a href="" class="hidden">Works</a>
+        <a href="" class="hidden">Contact</a>
       </nav>
     </header>
     <main>
       <div class="flexContainer">
         <section class="content">
-          <p>Welcome to my site</p>
-          <h2>Hi! I’m Soji-Oderinde Backend Developer</h2>
-          <p>
+          <p class="hidden">Welcome to my site</p>
+          <h2 class="hidden">Hi! I’m Soji-Oderinde Backend Developer</h2>
+          <p class="hidden">
             I'm Oluwadamilola Soji-Oderinde, a tech enthusiast, backend
             developer, open source contributor and Google Crowdsource
             Influencer.
           </p>
-          <p>
+          <p class="hidden">
             I am a Software engineering student with expertise in PHP
             programming language.
           </p>
           <div class="link-container">
-            <a href="" class="contact-link">Let's Talk</a
-            ><a href="" class="project-link">View Projects</a>
+            <a href="" class="contact-link hidden">Let's Talk</a
+            ><a href="" class="project-link hidden">View Projects</a>
           </div>
         </section>
-        <section class="image-container">
+        <section class="image-container hidden">
           <div class="img-bg">
             <img src="assets/image.png" alt="" />
           </div>
@@ -68,8 +69,8 @@
       </div>
 
       <section class="tech-used">
-        <h2>Technologies I Use</h2>
-        <ul>
+        <h2 class="hidden">Technologies I Use</h2>
+        <ul class="hidden">
           <li>JS</li>
           <li>-</li>
           <li>PHP</li>
