@@ -61,6 +61,10 @@ nav a:hover {
 .image-container .img-bg {
   background-color: #6350da;
   width: fit-content;
+  transform: translate(
+    20px,
+    20px
+  ); /*this value has to be the same as the top and right positioning of the image*/
 }
 .image-container img {
   right: 20px;
@@ -206,7 +210,7 @@ a.project-link {
 
 @media screen and (width <= 720px) {
   html {
-  overflow-y: auto;
+    overflow-y: auto;
   }
 
   .flexContainer {
@@ -256,7 +260,7 @@ a.project-link {
 
 /* for on scroll animation */
 .hidden {
-  opacity: 0;
+  opacity: 0.01;
   transition: all 1s;
   filter: blur(5px);
   transform: translateX(-100%);
