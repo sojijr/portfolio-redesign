@@ -7,6 +7,7 @@ body {
   background-color: #0d0d0d;
   color: #fff;
   padding: 30px 10%;
+  overflow-x: hidden;
   font-family: "Satoshi", sans-serif;
 }
 .head {
@@ -194,6 +195,12 @@ a.project-link {
     display: grid;
     grid-template-columns: 1fr;
   }
+
+  .image-container img {
+    max-width: 100%;
+    min-width: unset;
+  }
+
   .image-container {
     grid-row: 1 / span 1;
   }
