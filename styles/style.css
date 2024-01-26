@@ -214,9 +214,8 @@ a.project-link {
   }
 
   .flexContainer {
-    display: grid;
     grid-template-columns: 1fr;
-    margin-top: 50px;
+    margin-top: 10px;
   }
 
   .image-container {
@@ -243,7 +242,7 @@ a.project-link {
     visibility: hidden;
     position: absolute;
     top: 50px;
-    right: -30px;
+    right: -80px;
     z-index: 1000;
     background-color: #0d0d0d;
     padding: 10px 20px;
