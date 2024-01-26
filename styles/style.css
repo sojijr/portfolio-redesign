@@ -22,11 +22,15 @@ body {
 }
 .head h1 {
   font-family: "Space Grotesk", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 51px;
 }
 nav {
   display: flex;
   width: max-content;
   gap: 1em;
+  margin-right: 40px;
 }
 nav a {
   font-size: 24px;
@@ -63,12 +67,11 @@ nav a:hover {
   top: 20px;
   position: relative;
   width: 100%;
-  min-width: 350px;
-  max-width: 500px;
+  min-width: 400px;
+  max-width: 471px;
 }
 .content {
   font-family: "Satoshi", sans-serif;
-
   text-align: left;
 }
 .content p {
@@ -142,6 +145,10 @@ a.project-link {
   text-align: left;
 }
 
+/* ul.hidden li:nth-child(even) {
+  font-size: 30px;
+} */
+
 .menu-icon {
   visibility: hidden;
   position: absolute;
@@ -203,13 +210,13 @@ a.project-link {
     grid-template-columns: 1fr;
   }
 
+  .image-container {
+    grid-row: 1 / span 1;
+  }
+
   .image-container img {
     max-width: 100%;
     min-width: unset;
-  }
-
-  .image-container {
-    grid-row: 1 / span 1;
   }
 
   .menu-icon {
