@@ -5,7 +5,7 @@
 }
 html,
 body {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 body {
   position: relative;
@@ -30,7 +30,7 @@ nav {
   display: flex;
   width: max-content;
   gap: 1em;
-  margin-right: 40px;
+  margin-right: 50px;
 }
 nav a {
   font-size: 24px;
@@ -54,7 +54,7 @@ nav a:hover {
   gap: 1rem;
 }
 .flexContainer > * {
-  margin-top: 50px;
+  margin-top: 20px;
   width: 90%;
   max-width: 500px;
 }
@@ -67,7 +67,7 @@ nav a:hover {
   top: 20px;
   position: relative;
   width: 100%;
-  min-width: 400px;
+  min-width: 380px;
   max-width: 471px;
 }
 .content {
@@ -79,7 +79,7 @@ nav a:hover {
   font-weight: 400;
   line-height: 22px;
   letter-spacing: -0.02em;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .content h2 {
   font-size: 52px;
@@ -114,7 +114,7 @@ a.project-link {
   padding: 10px;
 }
 .tech-used {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .tech-used h2 {
   font-family: "Satoshi", sans-serif;
@@ -205,9 +205,14 @@ a.project-link {
 }
 
 @media screen and (width <= 720px) {
+  html {
+  overflow-y: auto;
+  }
+
   .flexContainer {
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 50px;
   }
 
   .image-container {
@@ -217,6 +222,10 @@ a.project-link {
   .image-container img {
     max-width: 100%;
     min-width: unset;
+  }
+
+  .tech-used {
+    margin-top: 50px;
   }
 
   .menu-icon {
