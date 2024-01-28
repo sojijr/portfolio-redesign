@@ -1,4 +1,4 @@
-// manages the on scrol animation
+// manages the on scroll animation
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
