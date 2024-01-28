@@ -135,6 +135,7 @@ a.project-link {
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 20px;
+  margin: 0px -60px;
   background-color: #6350da;
   box-shadow: 0 0 0 100vmax #6350da;
   clip-path: inset(0 -100vmax);
@@ -149,9 +150,10 @@ a.project-link {
   text-align: left;
 }
 
-/* ul.hidden li:nth-child(even) {
+ul.hidden li:nth-child(even) {
   font-size: 30px;
-} */
+  margin-top: -3px;
+}
 
 .menu-icon {
   visibility: hidden;
@@ -229,6 +231,14 @@ a.project-link {
 
   .tech-used {
     margin-top: 50px;
+  }
+
+  .tech-used ul {
+    margin: 0px -20px;
+  }
+
+  .li-hide {
+    display: none;
   }
 
   .menu-icon {
