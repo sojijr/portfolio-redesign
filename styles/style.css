@@ -210,7 +210,7 @@ ul.hidden li:nth-child(even) {
   visibility: visible;
 }
 
-@media screen and (width <= 720px) {
+@media screen and (width <= 820px) {
   html {
     overflow-y: auto;
   }
@@ -282,5 +282,30 @@ ul.hidden li:nth-child(even) {
 @media (prefers-reduced-motion) {
   .hidden {
     transition: none;
+  }
+}
+
+@media screen and (width >= 768px) and (width <= 820px) {
+  .li-hide {
+    display: block;
+  }
+
+  .menu-icon {
+    right: 80px;
+    width: 68px;
+  }
+
+  .menu-icon span {
+    margin: 7px 0;
+  }
+}
+
+@media screen and (width = 1024px) and (height = 600px) {
+  html {
+    overflow-y: auto;
+  }
+
+  nav {
+    margin-right: -70px;
   }
 }
