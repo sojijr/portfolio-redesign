@@ -210,7 +210,7 @@ ul.hidden li:nth-child(even) {
   visibility: visible;
 }
 
-@media screen and (width <= 820px) {
+@media screen and (width <= 1024px) {
   html {
     overflow-y: auto;
   }
@@ -285,7 +285,13 @@ ul.hidden li:nth-child(even) {
   }
 }
 
-@media screen and (width >= 768px) and (width <= 820px) {
+@media screen and (width <= 350px){
+   .li-hide {
+    display: block;
+  }
+}
+
+@media screen and (width >= 768px) and (width <= 1024px) {
   .li-hide {
     display: block;
   }
@@ -300,7 +306,7 @@ ul.hidden li:nth-child(even) {
   }
 }
 
-@media screen and (width = 1024px) and (height = 600px) {
+/* @media screen and (width = 1024px) and (height = 600px) {
   html {
     overflow-y: auto;
   }
@@ -308,4 +314,4 @@ ul.hidden li:nth-child(even) {
   nav {
     margin-right: -70px;
   }
-}
+} */
