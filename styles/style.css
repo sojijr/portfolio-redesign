@@ -322,7 +322,7 @@ ul.hidden li:nth-child(even) {
 
 @media screen and (width >= 912px) and (width <= 1024px) {
   html {
-    overflow: hidden;
+    overflow-y: auto;
   }
 
   body {
@@ -393,11 +393,5 @@ ul.hidden li:nth-child(even) {
     font-size: 2.8em;
     margin-top: 25px;
     padding: 8px;
-  }
-}
-
-@media screen and (width = 1024px) and (height = 600px) {
-  html {
-    overflow-y: auto;
   }
 }
