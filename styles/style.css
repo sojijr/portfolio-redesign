@@ -266,7 +266,7 @@ ul.hidden li:nth-child(even) {
     visibility: hidden;
     position: absolute;
     top: 50px;
-    right: -80px;
+    right: -70px;
     z-index: 1000;
     background-color: #0d0d0d;
     padding: 10px 20px;
